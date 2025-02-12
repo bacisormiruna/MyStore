@@ -18,6 +18,7 @@ const Product = () => {
         const response = await axios.get(
           `http://localhost:8080/api/product/${id}`
         );
+        console.log(response.data);
         setProduct(response.data);
         if (response.data.imageName) {
           fetchImage();
@@ -124,7 +125,7 @@ const Product = () => {
             <h6 style={{ marginBottom: "1rem" }}>
               Stock Available :{" "}
               <i style={{ color: "green", fontWeight: "bold" }}>
-                {product.stockQuantity}
+                {product?.stockQuantity || 'N/A'}
               </i>
             </h6>
           
