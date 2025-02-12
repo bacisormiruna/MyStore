@@ -51,7 +51,6 @@ const Navbar = ({ onSelectCategory, onSearch }) => {
     }
   };
 
-  
   // const handleChange = async (value) => {
   //   setInput(value);
   //   if (value.length >= 1) {
@@ -204,7 +203,7 @@ const Navbar = ({ onSelectCategory, onSearch }) => {
                     ) : (
                       noResults && (
                         <p className="no-results-message">
-                          No Prouduct with such Name
+                          No Product with such Name
                         </p>
                       )
                     )}
