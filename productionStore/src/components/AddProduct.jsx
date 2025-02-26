@@ -141,7 +141,6 @@ const AddProduct = () => {
             onChange={handleInputChange}
             value={product.stockQuantity}
             name="stockQuantity"
-            // value={`${stockAlert}/${stockQuantity}`}
             id="stockQuantity"
           />
         </div>
@@ -189,7 +188,6 @@ const AddProduct = () => {
           <button
             type="submit"
             className="btn btn-primary"
-            // onClick={submitHandler}
           >
             Submit
           </button>
